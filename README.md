@@ -46,6 +46,8 @@ For guidelines run:
 
 `isocomp create_windows -i sample1.gtf sample2.gtf sample3.gtf -f transcript -o clustered_file.gtf`
 
+*Note:* Please ensure that fasta index files exist for the input `.fasta` files in the same location as `.fasta` files. This can be generated using `samtools faidx BCM-data-HG002-All2Samples-hg38-Results/NA24385_HG002/MMSQANTI3Filter/NA24385.filtered.fasta`
+
 ### Step 2. Find unique isoforms across multiple samples
 
 `isocomp find_unique_isoforms -a clustered_file.gtf -f fasta_map.csv`
